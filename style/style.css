@@ -1,0 +1,244 @@
+@import url('https://cdn-uicons.flaticon.com/4.0.0/uicons-thin-rounded/css/uicons-thin-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/4.0.0/uicons-brands/css/uicons-brands.css');
+@import url('https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css');   
+@import url('https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/4.0.0/uicons-thin-chubby/css/uicons-thin-chubby.css');
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        /*background: linear-gradient(135deg, #0f172a, #1d4ed8, #3b82f6);*/
+        /*background-image: url(https://cdn.wallpapersafari.com/90/79/i9Stz0.jpg);*/
+        background-image: url(../imagens/roxo.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: roboto;
+        overflow: hidden;
+    }
+
+    .container{
+        
+        display: grid;
+        place-items: center;
+        backdrop-filter: blur(4px);
+        /*background-color: rgba(255, 255, 255, 0.1);*/
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 5px 5px 12px #00000035;
+        border-radius: 30px;
+        padding: 15px;
+        height: 100%;
+        max-height: 550px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    form{
+        display: grid;
+        place-items: center;
+        color: white;
+        width: 100%;
+        max-width: 350px;
+        padding-bottom: 90px;
+    }
+
+    form input{
+        color: white;
+        background: none;
+        padding: 12px;
+        margin-bottom: 5px;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        width: 100%;
+        font-size: 0.95rem;
+        transition: all 0.3s ease;
+        font-family: roboto;
+    }
+
+    input::placeholder{
+        color: white;
+        transition: all 0.3s ease;
+        opacity: 0.5;
+    }
+
+    
+    input:focus::placeholder{
+        color: transparent;
+    }
+    /*
+    form input:focus{
+        border-color: white;
+        box-shadow: 0 0 8px rgba(10, 78, 146, 1.5); 
+    }*/
+
+    form input[type="submit"]{
+        color: black;
+        background-color: white;
+        width: 100%;
+        max-width: 350px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    form input[type="submit"]:hover{
+        color: white;
+        background-color:black;
+        box-shadow: 0 0 8px rgba(10, 78, 146, 1.5); /* Brilho neon suave */
+    }
+
+    a{
+        color: black;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        position: relative;
+    }
+
+    nav{
+        margin: 10px 200px 50px 0px;
+    }
+
+    .a{
+        color: white;
+    }
+
+    /*a:hover{
+        text-shadow: 0 0 5px #fff,
+        0 0 10px blue,
+        0 0 20px rgb(16, 85, 105),
+        0 0 40px rgb(16, 85, 105),
+        0 0 80px rgb(16, 85, 105),
+        0 0 90px rgb(16, 85, 105),
+        0 0 100px rgb(16, 85, 105);
+        text-shadow: 0px 0 20px rgba(10, 78, 146, 1.5) ;
+    }*/
+
+    .a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -4px;
+        left: 0;
+        background-color: white;
+        transition: width 0.3s ease-in-out;
+        
+    }
+
+    .a:hover::after {
+        width: 100%; /* Faz a linha expandir da esquerda para a direita */
+    }
+
+    .icon{
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .icon i{
+        color: white;
+        font-size: 15vh;
+    }
+
+    fieldset{
+        display: flex;
+        width: 100%;
+        padding: 2px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+
+    fieldset i{
+        display: grid;
+        place-items: center;
+        padding-right: 10px;
+    }
+
+    fieldset:hover{
+        border-color: #dceaf7;
+        box-shadow: 0px 0 20px rgba(10, 78, 146, 1.5);
+    }
+
+    .divlogin{
+        display: grid;
+        place-items: center;
+    }
+
+    .divlogin i{
+        font-size: 5vh;
+        cursor: pointer;
+        margin-top: 7px;
+        transition: all 0.3s ease;
+    }
+
+    .divlogin i:hover {
+        transform: scale(1.1);
+    }
+
+    .divlogin table{
+       margin-top: 20px;
+        
+    }
+
+    .boxlogin{
+        display: flex;
+        place-items: center;
+    }
+
+    .boxlogin hr{
+        margin: 10px;
+    }
+
+  
+    table #google{
+        background-image: linear-gradient(135deg, #4285F4, #EA4335, #FBBC05, #34A853);
+        -webkit-background-clip: text; 
+        background-clip: text;         
+        color: transparent; 
+
+   
+    }
+
+    table #facebook{
+        color:blue;
+    }
+
+    th {
+        text-align: center;
+        vertical-align: middle;
+    }
+    
+    th a {
+        margin: 0px 20px 0px 10px;
+        padding: 8px;
+        background-color: white;
+        display: inline-flex;      /* Essencial para centralizar o ícone dentro */
+        justify-content: center;   /* Centraliza horizontalmente */
+        align-items: center;       /* Centraliza verticalmente */
+        width: 35px;               
+        height: 35px;              
+        border-radius: 50%;        
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .divback{
+        display: flex;
+        justify-content: flex-start; /* Alinha todo o conteúdo no canto esquerdo */
+        width: 100%;
+    }
+
+    #cad{
+        color: white;
+        margin: 10px;
+        font-size: 1.35rem;
+        position: absolute;
+        transition: all 0.3s ease;
+    }
+
+    #cad:hover{
+        transform: scale(1.3);
+    }
+
